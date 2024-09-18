@@ -1,26 +1,28 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
 </head>
-
 <body>
   <main>
     <div class="phoneContent grid grid-cols-6 mt-20">
     </div>
 
-    <div class="modal">
-      <div class="-z-0 w-[450px] h-[400px] bg-slate-300 fixed z-999 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 p-6">
-        <div class="flex justify-end w-full"><button class="close__btn bg-red-600 text-white p-2 rounded-sm hover:bg-slate-400 transition-all">close</button></div>
-
+    <div class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+      <div class="w-[450px] h-[400px] bg-slate-300 relative p-6 rounded-md">
+        <div class="flex justify-end w-full">
+          <button class="close__btn bg-red-600 text-white p-2 rounded-sm hover:bg-slate-400 transition-all">close</button>
+        </div>
+         
+        <div class="modal-content w-full h-full">
+        </div>
       </div>
     </div>
   </main>
 
   <script src="./js/main.js"></script>
 </body>
-
 </html>
+
